@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { AboutFeature } from '@/features';
+import { HomeFeature } from '@/features';
 
 export const metadata: Metadata = {
   title: 'Home | Wow',
@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default async function RootPage() {
-  return <AboutFeature />;
+  return <HomeFeature />;
 }

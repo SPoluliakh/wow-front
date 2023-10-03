@@ -5,53 +5,61 @@ export const setTypography = (theme: Theme) => {
   theme.typography = {
     ...theme.typography,
     h1: {
-      fontFamily: 'var(--font-roboto)',
-      fontSize: '56px',
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '80px',
       lineHeight: '64px',
       fontWeight: 700,
     },
     h2: {
-      fontFamily: 'var(--font-roboto)',
-      fontSize: '40px',
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '56px',
       lineHeight: '48px',
-      fontWeight: 700,
+      fontWeight: 300,
     },
     h3: {
-      fontFamily: 'var(--font-roboto)',
-      fontSize: '24px',
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '32px',
       lineHeight: '32px',
       fontWeight: 700,
       textTransform: 'uppercase',
     },
     h4: {
-      fontFamily: 'var(--font-roboto)',
+      fontFamily: 'var(--font-poppins)',
       fontSize: '24px',
-      lineHeight: '32px',
-      fontWeight: 700,
+      lineHeight: '36px',
+      fontWeight: 600,
+      textTransform: 'uppercase',
+    },
+    h5: {
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '24px',
+      lineHeight: '36px',
+      fontWeight: 500,
     },
     p1: {
-      fontFamily: 'var(--font-roboto)',
-      fontSize: '18px',
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '20px',
       lineHeight: '24px',
       fontWeight: 400,
+      textTransform: 'uppercase',
     },
     p2: {
-      fontFamily: 'var(--font-roboto)',
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '24px',
+      lineHeight: '24px',
+      fontWeight: 300,
+    },
+    p3: {
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '24px',
+      lineHeight: '24px',
+      fontWeight: 600,
+    },
+    p4: {
+      fontFamily: 'var(--font-poppins)',
       fontSize: '16px',
       lineHeight: '24px',
       fontWeight: 400,
-    },
-    p3: {
-      fontFamily: 'var(--font-roboto)',
-      fontSize: '14px',
-      lineHeight: '24px',
-      fontWeight: 400,
-    },
-    p1eb: {
-      fontFamily: 'var(--font-roboto)',
-      fontSize: '18px',
-      lineHeight: '24px',
-      fontWeight: 800,
     },
   };
 };
@@ -61,7 +69,7 @@ declare module '@mui/material/styles' {
     p1: React.CSSProperties;
     p2: React.CSSProperties;
     p3: React.CSSProperties;
-    p1eb: React.CSSProperties;
+    p4: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
@@ -69,7 +77,7 @@ declare module '@mui/material/styles' {
     p1?: React.CSSProperties;
     p2?: React.CSSProperties;
     p3?: React.CSSProperties;
-    p1eb: React.CSSProperties;
+    p4?: React.CSSProperties;
   }
 }
 
@@ -79,6 +87,6 @@ declare module '@mui/material/Typography' {
     p1: true;
     p2: true;
     p3: true;
-    p1eb: true;
+    p4: true;
   }
 }

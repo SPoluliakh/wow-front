@@ -3,20 +3,16 @@ import { PaletteOptions } from '@mui/material';
 export const palette: PaletteOptions = {
   primary: {
     main: '#000000',
-    c900: '#000000',
-    c800: '#111111',
-    c700: '#1C1C1C',
-    c600: '#505050',
-    c500: '#646464',
-    c400: '#8B8B8B',
-    c300: '#B6B6B6',
-    c200: '#E0E0E0',
+    c900: '#1C3B77',
+    c800: '#DDEDFF',
+    c700: '#EDF1FF',
+    c600: 'rgba(42, 67, 130, 0.50)',
+    c500: 'rgba(0, 0, 0, 0.75)',
     c100: '#FFFFFF',
   },
   accent: {
-    main: '#F4D21F',
-    c900: '#F4D21F',
-    c800: '#CBB338',
+    main: '#E30613',
+    c900: '#E30613',
   },
   error: {
     main: '#FD2928',
@@ -36,7 +32,6 @@ declare module '@mui/material/styles' {
     accent?: {
       main: string;
       c900: string;
-      c800: string;
     };
   }
 
@@ -66,6 +61,5 @@ declare module '@mui/material/styles' {
   interface AccentPalette {
     main: string;
     c900: string;
-    c800: string;
   }
 }

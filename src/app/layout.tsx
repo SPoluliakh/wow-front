@@ -1,11 +1,11 @@
 import '@/styles/globals.css';
 import { HeaderFeature, FooterFeature } from '@/features';
-import { roboto } from '@/common/fonts';
+import { poppins } from '@/common/fonts';
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={[roboto.variable, roboto.className].join(' ')}>
+      <body className={[poppins.variable, poppins.className].join(' ')}>
         <div
           style={{
             position: 'relative',

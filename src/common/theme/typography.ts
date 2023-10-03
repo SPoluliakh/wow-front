@@ -52,7 +52,7 @@ export const setTypography = (theme: Theme) => {
     p3: {
       fontFamily: 'var(--font-poppins)',
       fontSize: '24px',
-      lineHeight: '24px',
+      lineHeight: '36px',
       fontWeight: 600,
     },
     p4: {

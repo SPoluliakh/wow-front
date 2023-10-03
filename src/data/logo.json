@@ -1,12 +1,22 @@
 {
   "desktop": {
-    "width": 77,
-    "height": 32,
-    "src": "/icons/logo/logo-desktop.svg"
+    "width": 96,
+    "height": 96,
+    "src": "/icons/logo/logo-desktop.png"
+  },
+  "tablet": {
+    "width": 80,
+    "height": 80,
+    "src": "/icons/logo/logo-tablet.png"
   },
   "mobile": {
-    "width": 60,
-    "height": 32,
-    "src": "/icons/logo/logo-mobile.svg"
+    "width": 40,
+    "height": 40,
+    "src": "/icons/logo/logo-mobile.png"
+  },
+  "banner": {
+    "width": 200,
+    "height": 200,
+    "src": "/icons/logo/logo-banner.png"
   }
 }

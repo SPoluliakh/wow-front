@@ -6,7 +6,9 @@ export interface ILogo {
 
 export interface ILogoData {
   desktop: ILogo;
+  tablet: ILogo;
   mobile: ILogo;
+  banner: ILogo;
 }
 
 export type TLogoTypes = keyof ILogoData;

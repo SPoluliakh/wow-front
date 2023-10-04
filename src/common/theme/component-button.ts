@@ -13,21 +13,21 @@ export const setComponentButton = (theme: Theme) => {
     MuiButton: {
       styleOverrides: {
         root: ({ ownerState }) => ({
-          fontFamily: 'var(--font-roboto)',
+          fontFamily: 'var(--font-poppins)',
           fontWeight: 400,
           lineHeight: '24px',
           textTransform: 'none',
           borderStyle: 'solid',
           borderRadius: '4px',
           borderWidth: '2px',
-          padding: '12px 24px',
-          fontSize: '16px',
+          padding: '8px 16px',
+          fontSize: '20px',
 
           ...(ownerState.size === 'medium' &&
             ownerState.variant === 'text' && {
               [theme.breakpoints.up('xs')]: {
                 height: '40px',
-                width: '140px',
+                width: '260px',
               },
             }),
           ...(ownerState.size === 'medium' &&
@@ -48,18 +48,20 @@ export const setComponentButton = (theme: Theme) => {
           ...(ownerState.variant === 'contained' && { boxShadow: 'none' }),
 
           ...{
-            backgroundColor: palette.accent.c900,
-            borderColor: palette.accent.c900,
-            color: palette.primary.c900,
+            backgroundColor: palette.primary.c900,
+            borderColor: palette.primary.c900,
+            color: palette.primary.c100,
             ['&:focus']: { borderColor: palette.primary.c800 },
             ['&:hover']: {
-              backgroundColor: palette.accent.c800,
-              borderColor: palette.accent.c800,
+              backgroundColor: palette.primary.c800,
+              borderColor: palette.primary.c800,
+              color: palette.primary.c900,
               boxShadow: 'none',
             },
             ['&:active']: {
-              backgroundColor: palette.accent.c800,
-              borderColor: palette.accent.c800,
+              backgroundColor: palette.primary.c800,
+              borderColor: palette.primary.c800,
+              color: palette.primary.c900,
               boxShadow: 'none',
             },
             ['&.Mui-disabled']: {

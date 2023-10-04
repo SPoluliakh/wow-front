@@ -1,4 +1,4 @@
-export interface IBannerText {
-  title: string;
+export interface IBannerValuation {
+  id: number;
   text: string;
 }

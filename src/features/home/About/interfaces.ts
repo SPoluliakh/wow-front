@@ -1,4 +1,5 @@
-export interface AboutData {
+export interface IAboutData {
   title: string;
-  text: string[];
+  boldText: string[];
+  plainText: string[];
 }

@@ -1,5 +1,4 @@
 import aboutData from '../../../../data/about-us.json';
+import { IAboutData } from '../interfaces';
 
-const data = aboutData;
-
-export const useAboutData = () => data;
+export const useAboutData = (): IAboutData => aboutData;

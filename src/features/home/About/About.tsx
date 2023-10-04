@@ -9,10 +9,7 @@ export const About = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box
-        id="about"
-        sx={{ backgroundColor: 'primary.c800', position: 'relative', overflow: 'hidden' }}
-      >
+      <Box id="about" sx={{ backgroundColor: 'primary.c800', position: 'relative' }}>
         <BgBubbles />
         <Container
           sx={{

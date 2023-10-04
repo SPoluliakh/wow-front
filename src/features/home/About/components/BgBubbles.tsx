@@ -5,7 +5,18 @@ export const BgBubbles = () => {
   const { isSmUp, isMdUp } = useMedia();
 
   return (
-    <>
+    <Box
+      sx={{
+        position: 'absolute',
+        overflow: 'hidden',
+        maxWidth: '1800px',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        mx: 'auto',
+      }}
+    >
       <Box
         sx={{
           width: '312px',
@@ -17,7 +28,7 @@ export const BgBubbles = () => {
           position: 'absolute',
           top: !isSmUp ? '32px' : isMdUp ? 0 : '-80px',
           left: !isSmUp ? '16px' : isMdUp ? '74px' : '-36px',
-          zIndex: '0',
+          zIndex: '1',
         }}
       ></Box>
       {isSmUp && (
@@ -36,6 +47,6 @@ export const BgBubbles = () => {
           }}
         ></Box>
       )}
-    </>
+    </Box>
   );
 };

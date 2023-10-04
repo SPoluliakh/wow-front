@@ -1,5 +1,4 @@
-import { Box, Container, Typography, List, Button } from '@mui/material';
-import { Logo } from '@/common/components/Logo';
+import { Box, Container, List } from '@mui/material';
 import { useValuation } from './hooks';
 import { BannerInfo, BannerValuation } from './components';
 

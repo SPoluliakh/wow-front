@@ -1,1 +1,2 @@
-export * from './BannerText';
+export * from './BannerValuation';
+export * from './BannerInfo';

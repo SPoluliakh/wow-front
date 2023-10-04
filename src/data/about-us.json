@@ -1,7 +1,13 @@
 {
   "title": "ABOUT US",
-  "text": [
-    "Wow! Clean and Shine mobile service - residential and commercial exterior cleaning services in Aiken and the CSRA. We use our soft and pressure washing units to keep your home/business looking clean and beautiful.",
-    "We are family owned and operated company with over 15 years of industry experience in pressure washing services, we utilize our wealth of knowledge, state of the art technology, with cleaning solutions, detergents to ensure your property is safely and properly cleaned. Attention to detail is guaranteed!"
+  "boldText": [
+    "Wow! Clean and Shine mobile service - ",
+    "over 15 years",
+    "Attention to detail is guaranteed!"
+  ],
+  "plainText": [
+    "residential and commercial exterior cleaning services in Aiken and the CSRA. We use our soft and pressure washing units to keep your home/business looking clean and beautiful.",
+    "We are family owned and operated company with ",
+    " of industry experience in pressure washing services, we utilize our wealth of knowledge, state of the art technology, with cleaning solutions, detergents to ensure your property is safely and properly cleaned. "
   ]
 }

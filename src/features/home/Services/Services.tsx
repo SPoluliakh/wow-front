@@ -1,13 +1,24 @@
 'use client';
-import { Container, Stack, ThemeProvider, Typography } from '@mui/material';
-import { theme } from '@/common/theme';
+import { Box, Container, Grid, Typography } from '@mui/material';
+import { ServiceList } from './components';
+import { useServices } from './hooks';
 
-export const Services = () => (
-  <ThemeProvider theme={theme}>
-    <Stack gap={{ xs: 8, sm: 16 }}>
+export const Services = () => {
+  const services = useServices();
+
+  return (
+    <Box sx={{ py: '80px', backgroundColor: 'primary.c700' }}>
       <Container>
-        <Typography>Services</Typography>
+        <Typography
+          component="h2"
+          variant="h4"
+          color="primary.c900"
+          sx={{ textAlign: 'center', mb: '40px' }}
+        >
+          FEATURED SERVICES
+        </Typography>
+        <ServiceList services={services} />
       </Container>
-    </Stack>
-  </ThemeProvider>
-);
+    </Box>
+  );
+};

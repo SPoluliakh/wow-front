@@ -10,24 +10,14 @@ export const setComponentContainer = (theme: Theme) => {
           paddingLeft: 16,
           paddingRight: 16,
           [theme.breakpoints.up('sm')]: {
-            maxWidth: 992,
+            maxWidth: 768,
             paddingLeft: 24,
             paddingRight: 24,
           },
           [theme.breakpoints.up('md')]: {
-            maxWidth: 1200,
+            maxWidth: 1400,
             paddingLeft: 40,
             paddingRight: 40,
-          },
-          [theme.breakpoints.up('lg')]: {
-            maxWidth: 1440,
-            paddingLeft: 60,
-            paddingRight: 60,
-          },
-          [theme.breakpoints.up('xl')]: {
-            maxWidth: 1440,
-            paddingLeft: 60,
-            paddingRight: 60,
           },
         },
       },

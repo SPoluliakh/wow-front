@@ -6,7 +6,7 @@ export const palette: PaletteOptions = {
     c900: '#1C3B77',
     c800: '#DDEDFF',
     c700: '#EDF1FF',
-    c600: 'rgba(42, 67, 130, 0.50)',
+    c600: 'rgba(42, 67, 130, 0.70)',
     c500: 'rgba(0, 0, 0, 0.75)',
     c100: '#FFFFFF',
   },

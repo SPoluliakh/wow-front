@@ -27,7 +27,7 @@ export const setComponentButton = (theme: Theme) => {
             ownerState.variant === 'text' && {
               [theme.breakpoints.up('xs')]: {
                 height: '40px',
-                width: '261px',
+                width: '265px',
               },
             }),
           ...(ownerState.size === 'medium' &&

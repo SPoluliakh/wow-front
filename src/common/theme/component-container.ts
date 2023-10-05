@@ -15,9 +15,9 @@ export const setComponentContainer = (theme: Theme) => {
             paddingRight: 24,
           },
           [theme.breakpoints.up('md')]: {
-            maxWidth: 1400,
-            paddingLeft: 40,
-            paddingRight: 40,
+            maxWidth: 1440,
+            paddingLeft: 130,
+            paddingRight: 130,
           },
         },
       },

@@ -1,5 +1,5 @@
 'use client';
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import { ServiceList } from './components';
 import { useServices } from './hooks';
 

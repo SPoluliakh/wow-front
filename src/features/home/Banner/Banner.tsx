@@ -54,7 +54,7 @@ export const Banner = () => {
           }}
         >
           {valuation.map(({ id, text }) => (
-            <BannerValuation id={id} text={text} />
+            <BannerValuation text={text} key={id} />
           ))}
         </List>
       </Container>

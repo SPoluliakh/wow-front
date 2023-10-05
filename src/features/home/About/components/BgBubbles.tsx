@@ -1,8 +1,10 @@
 import { Box } from '@mui/material';
 import { useMedia } from '@/common/hooks';
+import { useStyle } from '../hooks';
 
 export const BgBubbles = () => {
   const { isSmUp, isMdUp } = useMedia();
+  const { top, left } = useStyle();
 
   return (
     <Box
@@ -26,8 +28,8 @@ export const BgBubbles = () => {
           },
           backgroundRepeat: 'no-repeat',
           position: 'absolute',
-          top: !isSmUp ? '32px' : isMdUp ? 0 : '-80px',
-          left: !isSmUp ? '16px' : isMdUp ? '74px' : '-36px',
+          top,
+          left,
           zIndex: '1',
         }}
       ></Box>

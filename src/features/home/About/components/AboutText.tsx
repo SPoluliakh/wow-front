@@ -10,7 +10,7 @@ export const AboutText = () => {
   return (
     <Box sx={{ px: isMdUp ? '100px' : 0 }}>
       <Typography
-        variant="h3"
+        variant="h4"
         component="h2"
         color="primary.c900"
         sx={{ marginBottom: isSmUp ? '40px' : '20px', textAlign: 'center' }}

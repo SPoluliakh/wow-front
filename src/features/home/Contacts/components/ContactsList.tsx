@@ -21,7 +21,7 @@ export const ContactsList = ({ contacts }: Props) => {
         margin: '0 !important',
       }}
     >
-      {contacts.map(({ id, title, text, Icon }, index) => (
+      {contacts.map(({ id, title, text, Icon }) => (
         <Grid
           item
           key={id}

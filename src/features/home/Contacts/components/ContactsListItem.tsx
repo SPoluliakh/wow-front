@@ -25,14 +25,23 @@ export const ContactsListItem = ({ width, height, icon, title, text }: Props) =>
           backgroundColor: 'primary.c100',
           p: '24px',
           color: 'primary.c900',
-          transition: 'border-width 250ms linear',
 
           '.css-85kwfl-MuiGrid-root:hover &': {
             borderWidth: '3px',
           },
         }}
       >
-        <Box sx={{ display: 'flex', alignItems: 'center', mb: '24px' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            mb: '24px',
+            '& .MuiSvgIcon-root': {
+              width: '32px',
+              height: '32px',
+            },
+          }}
+        >
           {icon}
 
           <Typography variant="p3" component="h4" sx={{ ml: '16px' }}>

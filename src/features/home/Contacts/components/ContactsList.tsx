@@ -32,7 +32,13 @@ export const ContactsList = ({ contacts }: Props) => {
             },
           }}
         >
-          <ContactsListItem title={title} text={text} Icon={Icon} width={width} height={height} />
+          <ContactsListItem
+            title={title}
+            text={text}
+            icon={<Icon />}
+            width={width}
+            height={height}
+          />
         </Grid>
       ))}
     </Grid>

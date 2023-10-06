@@ -1,6 +1,7 @@
 import CallIcon from '@mui/icons-material/Call';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PlaceIcon from '@mui/icons-material/Place';
+import { IContacts } from '../interfaces';
 
 const contactsList: IContacts[] = [
   {
@@ -40,7 +41,5 @@ const contactsList: IContacts[] = [
     Icon: PlaceIcon,
   },
 ];
-
-import { IContacts } from '../interfaces';
 
 export const useContacts = (): IContacts[] => contactsList;

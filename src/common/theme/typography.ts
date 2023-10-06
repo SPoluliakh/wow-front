@@ -41,7 +41,6 @@ export const setTypography = (theme: Theme) => {
       fontSize: '20px',
       lineHeight: '24px',
       fontWeight: 400,
-      textTransform: 'uppercase',
     },
     p2: {
       fontFamily: 'var(--font-poppins)',

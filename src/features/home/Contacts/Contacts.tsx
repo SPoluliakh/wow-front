@@ -1,13 +1,16 @@
 'use client';
-import { Container, ThemeProvider, Typography } from '@mui/material';
-import { theme } from '@/common/theme';
+import { Box, Container, Typography } from '@mui/material';
+import { useContacts } from './hooks';
+import { ContactsList } from './components';
 
 export const Contacts = () => {
+  const contacts = useContacts();
+
   return (
-    <ThemeProvider theme={theme}>
+    <Box sx={{ backgroundColor: 'primary.c800', py: '80px' }}>
       <Container>
-        <Typography>Contacts</Typography>
+        <ContactsList contacts={contacts} />
       </Container>
-    </ThemeProvider>
+    </Box>
   );
 };

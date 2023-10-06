@@ -19,7 +19,6 @@ export const ServiceList = ({ services }: Props) => {
         alignItems: 'center',
         flexWrap: 'wrap',
         margin: '0 !important',
-        width: '100% !important',
       }}
     >
       {services.map(({ id, title, text, src }) => (

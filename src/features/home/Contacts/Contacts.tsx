@@ -1,7 +1,7 @@
 'use client';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import { useContacts } from './hooks';
-import { ContactsList } from './components';
+import { ContactsList, Map } from './components';
 
 export const Contacts = () => {
   const contacts = useContacts();
@@ -10,6 +10,7 @@ export const Contacts = () => {
     <Box sx={{ backgroundColor: 'primary.c800', py: '80px' }}>
       <Container>
         <ContactsList contacts={contacts} />
+        <Map />
       </Container>
     </Box>
   );

@@ -66,6 +66,12 @@ export const setTypography = (theme: Theme) => {
       lineHeight: '24px',
       fontWeight: 400,
     },
+    p6: {
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '12px',
+      lineHeight: '14px',
+      fontWeight: 300,
+    },
   };
 };
 
@@ -76,6 +82,7 @@ declare module '@mui/material/styles' {
     p3: React.CSSProperties;
     p4: React.CSSProperties;
     p5: React.CSSProperties;
+    p6: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
@@ -85,6 +92,7 @@ declare module '@mui/material/styles' {
     p3?: React.CSSProperties;
     p4?: React.CSSProperties;
     p5?: React.CSSProperties;
+    p6?: React.CSSProperties;
   }
 }
 
@@ -96,5 +104,6 @@ declare module '@mui/material/Typography' {
     p3: true;
     p4: true;
     p5: true;
+    p6: true;
   }
 }

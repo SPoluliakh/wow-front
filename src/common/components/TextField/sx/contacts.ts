@@ -2,8 +2,9 @@ import { CSSSelectorObjectOrCssVariables } from '@mui/system';
 import { Theme } from '@mui/material';
 
 export const contacts: CSSSelectorObjectOrCssVariables<Theme> = {
-  fontFamily: 'var(--font-montserrat)',
-  width: '100%',
+  fontFamily: 'var(--font-poppins)',
+  width: '400px',
+  m: '0 auto',
   lineHeight: '24px',
   py: '24px',
   '& fieldset span': { display: 'none' },
@@ -45,8 +46,8 @@ export const contacts: CSSSelectorObjectOrCssVariables<Theme> = {
       display: 'none',
     },
     '&.Mui-focused .MuiInputBase-input': {
-      backgroundColor: 'secondary.c50',
-      borderColor: 'primary.c700',
+      backgroundColor: 'primary.c100',
+      borderColor: 'primary.c300',
     },
     [`&.Mui-error.Mui-focused .MuiInputBase-input,
       &.Mui-error .MuiInputBase-input`]: {
@@ -54,7 +55,7 @@ export const contacts: CSSSelectorObjectOrCssVariables<Theme> = {
     },
     '&.Mui-disabled .MuiInputBase-input': {
       borderColor: 'primary.c100',
-      '&::placeholder': { opacity: 0 },
+      '&::placeholder': { opacity: 0, color: 'primary.c300' },
     },
     '& .MuiInputBase-input': {
       height: 'auto',
@@ -62,13 +63,13 @@ export const contacts: CSSSelectorObjectOrCssVariables<Theme> = {
       pl: '16px',
       pr: '48px',
       fontSize: { xs: '16px', sm: '18px' },
-      color: 'secondary.c900',
-      backgroundColor: 'secondary.c50',
-      borderColor: 'primary.c500',
+      color: 'primary.c900',
+      backgroundColor: 'primary.c100',
+      borderColor: 'primary.c300',
       borderWidth: 1,
       borderStyle: 'solid',
-      borderRadius: '8px',
-      '&::placeholder': { color: 'secondary.c500', opacity: '1' },
+      borderRadius: '12px',
+      '&::placeholder': { color: 'primary.c300', opacity: '1' },
     },
     '& .MuiInputBase-inputMultiline': {
       px: '16px',
@@ -76,6 +77,7 @@ export const contacts: CSSSelectorObjectOrCssVariables<Theme> = {
     '& .MuiInputAdornment-positionEnd': {
       position: 'absolute',
       right: '16px',
+      color: 'primary.c900',
     },
   },
 

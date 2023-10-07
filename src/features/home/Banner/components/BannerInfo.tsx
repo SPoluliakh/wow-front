@@ -1,5 +1,6 @@
+import { CallbackBtn } from '@/common/components/CallbackBtn';
 import { Logo } from '@/common/components/Logo';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 export const BannerInfo = () => (
   <Box
@@ -22,10 +23,11 @@ export const BannerInfo = () => (
       </Box>
     </Box>
     <Box>
-      <Button>REQUEST A CALLBACK</Button>
-      <Button sx={{ backgroundColor: 'primary.c100', color: 'primary.c900', ml: '24px' }}>
-        BOOK A FREE ESTIMATE
-      </Button>
+      <CallbackBtn variant="REQUEST A CALLBACK" />
+      <CallbackBtn
+        variant="BOOK A FREE ESTIMATE"
+        sx={{ backgroundColor: 'primary.c100', color: 'primary.c900', ml: '24px' }}
+      />
     </Box>
   </Box>
 );

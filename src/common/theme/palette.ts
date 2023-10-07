@@ -8,6 +8,8 @@ export const palette: PaletteOptions = {
     c700: '#EDF1FF',
     c600: 'rgba(42, 67, 130, 0.70)',
     c500: 'rgba(0, 0, 0, 0.75)',
+    c400: '#F4F4F4',
+    c300: '#9C9C9C',
     c100: '#FFFFFF',
   },
   accent: {

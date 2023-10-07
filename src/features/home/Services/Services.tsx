@@ -7,7 +7,7 @@ export const Services = () => {
   const services = useServices();
 
   return (
-    <Box sx={{ py: '80px', backgroundColor: 'primary.c700' }}>
+    <Box id="services" sx={{ py: '80px', backgroundColor: 'primary.c700' }}>
       <Container>
         <Typography
           component="h2"

@@ -27,7 +27,7 @@ export const ContactsList = ({ contacts }: Props) => {
           key={id}
           sx={{
             p: '0 !important',
-            '&:nth-child(-n + 3)': {
+            '&:nth-of-type(-n + 3)': {
               mb: `${margin}px`,
             },
           }}

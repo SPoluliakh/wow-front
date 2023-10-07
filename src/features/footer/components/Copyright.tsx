@@ -3,7 +3,12 @@ import { Box, Typography } from '@mui/material';
 export const Copyright = () => {
   return (
     <Box>
-      <Typography variant="p5" component="p" color="primary.c900" sx={{ textAlign: 'center' }}>
+      <Typography
+        variant="p5"
+        component="p"
+        color="primary.c900"
+        sx={{ textAlign: 'center', mb: '4px' }}
+      >
         &copy; WOW! Clean and shine 2023. All rights reserved.
       </Typography>
       <Typography

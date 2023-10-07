@@ -11,8 +11,8 @@ export const setComponentContainer = (theme: Theme) => {
           paddingRight: 16,
           [theme.breakpoints.up('sm')]: {
             maxWidth: 768,
-            paddingLeft: 24,
-            paddingRight: 24,
+            paddingLeft: 30,
+            paddingRight: 30,
           },
           [theme.breakpoints.up('md')]: {
             maxWidth: 1440,

@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 import { IContacts } from '../interfaces';
 import { ContactsListItem } from './ContactsListItem';
-import { useCartMargin, useCartSize } from '../hooks';
+import { useCartGap, useCartSize } from '../hooks';
 
 interface Props {
   contacts: IContacts[];
@@ -9,16 +9,17 @@ interface Props {
 
 export const ContactsList = ({ contacts }: Props) => {
   const { width, height } = useCartSize();
-  const margin = useCartMargin();
+  const { rowGap, columnGap } = useCartGap();
 
   return (
     <Grid
       container
       sx={{
-        gap: '20px',
         alignItems: 'center',
         flexWrap: 'wrap',
         margin: '0 !important',
+        rowGap,
+        columnGap,
       }}
     >
       {contacts.map(({ id, title, text, Icon }) => (
@@ -27,9 +28,6 @@ export const ContactsList = ({ contacts }: Props) => {
           key={id}
           sx={{
             p: '0 !important',
-            '&:nth-of-type(-n + 3)': {
-              mb: `${margin}px`,
-            },
           }}
         >
           <ContactsListItem

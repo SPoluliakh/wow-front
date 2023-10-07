@@ -13,7 +13,7 @@ export const ServiceListItem = ({ width, height, src, title, text }: Props) => (
   <Box
     sx={{
       position: 'relative',
-      width: `${width}px`,
+      width: `100%`,
       height: `${height}px`,
       borderRadius: '12px',
       overflow: 'hidden',
@@ -26,7 +26,7 @@ export const ServiceListItem = ({ width, height, src, title, text }: Props) => (
         position: 'absolute',
         top: '292px',
         left: 0,
-        width: `${width}px`,
+        width: `100%`,
         height: `${height}px`,
         px: '20px',
         pt: '20px',

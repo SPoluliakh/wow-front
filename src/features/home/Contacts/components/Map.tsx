@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
-import { useMapSize } from '../hooks';
+import { useMapMargin } from '../hooks';
 
 export const Map = () => {
-  const { marginTop, width } = useMapSize();
+  const { marginTop } = useMapMargin();
 
   return (
     <Box
@@ -11,7 +11,7 @@ export const Map = () => {
         borderRadius: '12px',
         overflow: 'hidden',
         marginTop,
-        width,
+        width: '100%',
       }}
     >
       <iframe

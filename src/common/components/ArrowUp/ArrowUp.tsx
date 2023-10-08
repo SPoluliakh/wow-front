@@ -22,10 +22,11 @@ export const ArrowUp = () => {
             width: '64px',
             height: '64px',
             borderRadius: '50%',
-            border: '4px solid #1C3B77',
+            border: '4px solid',
+            borderColor: 'primary.c900',
           }}
         >
-          <ArrowUpwardRounded sx={{ width: '48px', height: '48px', color: '#1C3B77' }} />
+          <ArrowUpwardRounded sx={{ width: '48px', height: '48px', color: 'primary.c900' }} />
         </IconButton>
       )}
     </>

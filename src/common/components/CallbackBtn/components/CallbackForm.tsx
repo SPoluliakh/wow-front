@@ -1,9 +1,9 @@
-import { Button } from '@mui/material';
 import { useForm } from '../hooks';
 import { TextField } from '../../TextField';
 import { Form } from '../../Form';
 import { SubmitInterface } from '../../Popup';
 import { Numbers } from './Numbers';
+import { Button } from '@mui/material';
 
 interface Props {
   onSubmit: SubmitInterface;
@@ -12,8 +12,7 @@ interface Props {
 }
 
 export const CallbackForm = ({ onSubmit, variant, numbers }: Props) => {
-  const { errors, values, touched, handleChange, handleBlur, handleSubmit, setFieldValue } =
-    useForm(onSubmit!);
+  const { errors, values, touched, handleChange, handleBlur, handleSubmit } = useForm(onSubmit);
 
   return (
     <Form handleSubmit={handleSubmit} sx={{ flexGrow: 1 }}>
@@ -44,6 +43,7 @@ export const CallbackForm = ({ onSubmit, variant, numbers }: Props) => {
       <Button type="submit" sx={{ m: '0 auto' }}>
         {variant}
       </Button>
+
       {!numbers && <Numbers />}
     </Form>
   );

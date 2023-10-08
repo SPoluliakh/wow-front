@@ -7,9 +7,10 @@ interface Props {
   title: string;
   open: boolean;
   onClose: () => void;
+  subTitle: string;
 }
 
-export const Popup = ({ children, title, open, onClose }: Props) => (
+export const Popup = ({ children, title, open, onClose, subTitle }: Props) => (
   <Dialog
     onClose={onClose}
     open={open}
@@ -56,7 +57,7 @@ export const Popup = ({ children, title, open, onClose }: Props) => (
       {title}
     </DialogTitle>
     <Typography component="p" variant="p4" sx={{ color: 'primary.c900' }}>
-      Enter your data and we will call you
+      {subTitle}
     </Typography>
     {children}
   </Dialog>

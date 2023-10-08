@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { SxPropsInterface } from 'src/common/interfaces';
+import { SxPropsInterface } from '@/common/interfaces/interfaces';
 
 interface Props {
   handleSubmit: () => void;

@@ -1,17 +1,19 @@
-import { Button, Typography } from '@mui/material';
+import { Button } from '@mui/material';
 import { useForm } from '../hooks';
 import { TextField } from '../../TextField';
 import { Form } from '../../Form';
 import { SubmitInterface } from '../../Popup';
+import { Numbers } from './Numbers';
 
 interface Props {
   onSubmit: SubmitInterface;
   variant: string;
+  numbers?: boolean;
 }
 
-export const CallbackForm = ({ onSubmit, variant }: Props) => {
+export const CallbackForm = ({ onSubmit, variant, numbers }: Props) => {
   const { errors, values, touched, handleChange, handleBlur, handleSubmit, setFieldValue } =
-    useForm(onSubmit);
+    useForm(onSubmit!);
 
   return (
     <Form handleSubmit={handleSubmit} sx={{ flexGrow: 1 }}>
@@ -39,22 +41,10 @@ export const CallbackForm = ({ onSubmit, variant }: Props) => {
         helperText={errors.phone && touched.phone && errors.phone}
       />
 
-      <Button type="submit" sx={{ m: '0 auto', mb: '48px' }}>
+      <Button type="submit" sx={{ m: '0 auto' }}>
         {variant}
       </Button>
-
-      <Typography variant="p5" component="a" color="primary.c900" href="tel:8036341263">
-        (803)634-1263
-      </Typography>
-      <Typography
-        variant="p5"
-        component="a"
-        color="primary.c900"
-        href="tel:8035072505"
-        sx={{ display: 'block', mt: '20px' }}
-      >
-        (803)507-2505
-      </Typography>
+      {!numbers && <Numbers />}
     </Form>
   );
 };

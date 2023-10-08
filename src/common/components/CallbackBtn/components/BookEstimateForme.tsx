@@ -1,8 +1,9 @@
-import { Button, Typography } from '@mui/material';
+import { Button } from '@mui/material';
 import { useBookForm } from '../hooks';
 import { TextField } from '../../TextField';
 import { Form } from '../../Form';
 import { BookSubmitInterface } from '../../Popup';
+import { Numbers } from './Numbers';
 
 interface Props {
   onSubmit: BookSubmitInterface;
@@ -52,22 +53,10 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
         helperText={errors.location && touched.location && errors.location}
       />
 
-      <Button type="submit" sx={{ m: '0 auto', mb: '48px' }}>
+      <Button type="submit" sx={{ m: '0 auto' }}>
         {variant}
       </Button>
-
-      <Typography variant="p5" component="a" color="primary.c900" href="tel:8036341263">
-        (803)634-1263
-      </Typography>
-      <Typography
-        variant="p5"
-        component="a"
-        color="primary.c900"
-        href="tel:8035072505"
-        sx={{ display: 'block', mt: '20px' }}
-      >
-        (803)507-2505
-      </Typography>
+      <Numbers />
     </Form>
   );
 };

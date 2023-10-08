@@ -24,10 +24,10 @@ export const Popup = ({ children, title, open, onClose }: Props) => (
         backgroundColor: 'primary.c400',
         textAlign: 'center',
         backgroundImage: {
-          xs: 'url("/images/popup/bubbles.png"),url("/images/popup/bubbles.png")',
+          xs: 'url("/images/popup/bubbles.png"),url("/images/popup/bubble.png")',
         },
         backgroundRepeat: 'no-repeat',
-        backgroundSize: '222px 202px,222px 202px',
+        backgroundSize: '222px 202px,181px 224px',
         backgroundPosition: 'top left,bottom right',
       },
     }}

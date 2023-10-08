@@ -2,14 +2,18 @@ import { Box, Typography } from '@mui/material';
 import CallIcon from '@mui/icons-material/Call';
 import MailOutline from '@mui/icons-material/MailOutline';
 import { useMedia } from '@/common/hooks';
-import { useFlexSettings } from '../hooks';
 
 export const Contacts = () => {
   const { isSmUp } = useMedia();
-  const { flexDirection, gap } = useFlexSettings();
 
   return (
-    <Box sx={{ display: 'flex', gap, flexDirection }}>
+    <Box
+      sx={{
+        display: 'flex',
+        gap: { xs: '16px', sm: '24px', md: '40px' },
+        flexDirection: { xs: 'column-reverse', sm: 'column', md: 'row' },
+      }}
+    >
       <Box
         color="primary.c900"
         sx={{

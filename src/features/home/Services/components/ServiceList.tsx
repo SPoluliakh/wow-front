@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import { IServices } from '../interfaces';
-import { useCartSize } from '../hooks';
+import { useCartGap, useCartSize } from '../hooks';
 import { ServiceListItem } from './ServiceListItem';
 
 interface Props {
@@ -9,16 +9,18 @@ interface Props {
 
 export const ServiceList = ({ services }: Props) => {
   const { width, height } = useCartSize();
+  const { gap } = useCartGap();
 
   return (
     <Grid
       container
       spacing={{ xs: 12, sm: 2, md: 2 }}
       sx={{
-        gap: '20px',
+        gap,
         alignItems: 'center',
         flexWrap: 'wrap',
         margin: '0 !important',
+        width: '100% !important',
       }}
     >
       {services.map(({ id, title, text, src }) => (

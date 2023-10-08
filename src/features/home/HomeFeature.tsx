@@ -1,6 +1,7 @@
 'use client';
 import { Stack, ThemeProvider } from '@mui/material';
 import { theme } from '@/common/theme';
+import { ArrowUp } from '@/common/components/ArrowUp';
 import { Banner } from './Banner';
 import { Contacts } from './Contacts';
 import { Services } from './Services';
@@ -14,5 +15,6 @@ export const HomeFeature = () => (
       <Services />
       <Contacts />
     </Stack>
+    <ArrowUp />
   </ThemeProvider>
 );

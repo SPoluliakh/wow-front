@@ -1,14 +1,19 @@
 import { Logo } from '@/common/components/Logo';
 import { Box, Container } from '@mui/material';
 import { HeaderBtn, NavItems } from './components';
+import { useMedia } from '@/common/hooks';
+import { useLogoSize } from './hooks/useLogoSize';
 
 export const Header = () => {
+  const { isSmUp, isMdUp } = useMedia();
+  const variant = useLogoSize();
+
   return (
-    <Box sx={{ backgroundColor: 'primary.c800' }}>
+    <Box sx={{ backgroundColor: 'primary.c800', py: isMdUp ? '6px' : 0 }}>
       <Container sx={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Logo variant="desktop" />
+        <Logo variant={variant} />
         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-          <NavItems />
+          {isSmUp && <NavItems />}
           <HeaderBtn />
         </Box>
       </Container>

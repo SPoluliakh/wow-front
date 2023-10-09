@@ -1,8 +1,9 @@
 'use client';
 import { theme } from '@/common/theme';
 import { Box, Container, ThemeProvider } from '@mui/material';
-import { Contacts, Copyright } from './components';
+import { Copyright } from './components';
 import { usePosition } from './hooks';
+import { Contacts } from '@/common/components';
 
 export const FooterFeature = () => {
   const { justifyContent, alignItems, flexDirection, gap, paddingBottom } = usePosition();

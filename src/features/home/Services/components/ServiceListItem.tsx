@@ -28,7 +28,7 @@ export const ServiceListItem = ({ width, height, src, title, text }: Props) => {
       <Box
         sx={{
           position: 'absolute',
-          top: '292px',
+          top: { xs: '275px', sm: '246px', md: '292px' },
           left: 0,
           width: `100%`,
           height: `${height}px`,

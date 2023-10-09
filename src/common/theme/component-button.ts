@@ -15,28 +15,48 @@ export const setComponentButton = (theme: Theme) => {
         root: ({ ownerState }) => ({
           fontFamily: 'var(--font-poppins)',
           fontWeight: 400,
-          lineHeight: '24px',
+          lineHeight: 1.5,
           textTransform: 'none',
           borderStyle: 'solid',
-          borderRadius: '4px',
+          borderRadius: '8px',
           borderWidth: '2px',
-          padding: '8px 16px',
+          paddingTop: '8px',
+          paddingBottom: '8px',
+          paddingLeft: '16px',
+          paddingRight: '16px',
           fontSize: '20px',
 
           ...(ownerState.size === 'medium' &&
             ownerState.variant === 'text' && {
               [theme.breakpoints.up('xs')]: {
-                height: '40px',
-                width: '265px',
+                height: '32px',
+                minWidth: '56px',
               },
             }),
           ...(ownerState.size === 'medium' &&
             ownerState.variant === 'contained' && {
               [theme.breakpoints.up('xs')]: {
-                height: '48px',
-                width: '308px',
+                height: '32px',
+                width: '56px',
               },
               [theme.breakpoints.down('sm')]: {
+                width: '100%',
+              },
+            }),
+          ...(ownerState.size === 'medium' &&
+            ownerState.variant === 'text' && {
+              [theme.breakpoints.up('sm')]: {
+                height: '48px',
+                minWidth: '64px',
+              },
+            }),
+          ...(ownerState.size === 'medium' &&
+            ownerState.variant === 'contained' && {
+              [theme.breakpoints.up('sm')]: {
+                height: '48px',
+                width: '64px',
+              },
+              [theme.breakpoints.down('md')]: {
                 width: '100%',
               },
             }),

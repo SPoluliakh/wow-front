@@ -6,7 +6,7 @@ export const setComponentContainer = (theme: Theme) => {
     MuiContainer: {
       styleOverrides: {
         root: {
-          maxWidth: 360,
+          maxWidth: 390,
           paddingLeft: 16,
           paddingRight: 16,
           [theme.breakpoints.up('sm')]: {
@@ -15,6 +15,11 @@ export const setComponentContainer = (theme: Theme) => {
             paddingRight: 30,
           },
           [theme.breakpoints.up('md')]: {
+            maxWidth: 1280,
+            paddingLeft: 50,
+            paddingRight: 50,
+          },
+          [theme.breakpoints.up('lg')]: {
             maxWidth: 1440,
             paddingLeft: 130,
             paddingRight: 130,

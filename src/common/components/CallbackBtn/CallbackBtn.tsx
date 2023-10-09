@@ -6,14 +6,15 @@ import { SxPropsInterface } from '@/common/interfaces/interfaces';
 import { BookEstimateForme } from './components/BookEstimateForme';
 import { AnswerForm } from '@/common/AnswerBtn/components';
 import { useAnswer } from '@/common/hooks/useAnswer';
+import { ReactNode } from 'react';
 
 interface Props {
   variant: string;
   sx?: SxPropsInterface;
+  icon?: ReactNode;
 }
 
-export const CallbackBtn = ({ variant, sx }: Props) => {
-
+export const CallbackBtn = ({ variant, sx, icon }: Props) => {
   const { isAnswer, handleAnswerOpen, handleAnswerClose } = useAnswer();
   const { handleClose, handleOpen, isOpen } = usePopup(handleAnswerClose);
   const { onSubmit } = useCallback(handleAnswerOpen);
@@ -22,7 +23,7 @@ export const CallbackBtn = ({ variant, sx }: Props) => {
   return (
     <>
       <Button onClick={handleOpen} sx={{ ...sx }}>
-        {variant}
+        {icon ?? variant}
       </Button>
       <Popup
         title={!isAnswer ? 'Interested in our services?' : '"Thank You!"'}

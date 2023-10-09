@@ -17,13 +17,13 @@ export const ContactsListItem = ({ icon, title, text }: Props) => {
     <Box component="a" href={href} target="_blank">
       <Box
         sx={{
-          height: { xs: '115px', sm: '152px' },
+          height: { xs: '120px', sm: '152px' },
           border: '2px solid #1C3B77',
           borderRadius: '12px',
           overflow: 'hidden',
           cursor: 'pointer',
           backgroundColor: 'primary.c100',
-          py: '24px',
+          py: { xs: '20px', sm: '24px' },
           px: { xs: '16px', md: '24px' },
           color: 'primary.c900',
 

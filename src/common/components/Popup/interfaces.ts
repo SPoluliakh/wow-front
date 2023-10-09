@@ -1,3 +1,5 @@
+
+
 export interface SubmitActionsInterface {
   resetForm: () => void;
 }
@@ -9,8 +11,9 @@ export interface SubmitValuesInterface {
 
 export interface BookSubmitValuesInterface {
   location: string;
-  time: string;
-  data: string;
+  name: string;
+  phone: string;
+  
 }
 
 export type SubmitInterface = (

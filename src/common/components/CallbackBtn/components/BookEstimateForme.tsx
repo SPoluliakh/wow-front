@@ -1,4 +1,5 @@
 import { Button } from '@mui/material';
+import { Dayjs } from 'dayjs';
 import { useBookForm } from '../hooks';
 import { TextField } from '../../TextField';
 import { Form } from '../../Form';
@@ -13,7 +14,15 @@ interface Props {
 }
 
 export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
-  const { errors, values, touched, handleChange, handleBlur, handleSubmit } = useBookForm(onSubmit);
+  const { setFieldValue, errors, values, touched, handleChange, handleBlur, handleSubmit } =
+    useBookForm(onSubmit);
+
+  const handleDateChange = (date: Date | null) => {
+    setFieldValue('date', date);
+  };
+  const handleDateChange2 = (time: Dayjs | null) => {
+    setFieldValue('time', time);
+  };
 
   return (
     <Form handleSubmit={handleSubmit} sx={{ flexGrow: 1 }}>
@@ -37,8 +46,8 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
         error={!!errors.phone && touched.phone && !!errors.phone}
         helperText={errors.phone && touched.phone && errors.phone}
       />
-      <MyDatePicker />
-      <MyTimePicker />
+      <MyDatePicker value={values.date} handleChange={handleDateChange} />
+      <MyTimePicker value={values.time} handleChange={handleDateChange2} />
       <TextField
         sx={{ mb: '16px' }}
         name="location"

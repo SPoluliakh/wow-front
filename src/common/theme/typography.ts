@@ -90,6 +90,24 @@ export const setTypography = (theme: Theme) => {
       lineHeight: 1.5,
       fontWeight: 300,
     },
+    p9: {
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '20px',
+      lineHeight: 1.5,
+      fontWeight: 600,
+    },
+    p10: {
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '16px',
+      lineHeight: 1.5,
+      fontWeight: 600,
+    },
+    p11: {
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '18px',
+      lineHeight: 1.5,
+      fontWeight: 400,
+    },
   };
 };
 
@@ -103,6 +121,9 @@ declare module '@mui/material/styles' {
     p6: React.CSSProperties;
     p7: React.CSSProperties;
     p8: React.CSSProperties;
+    p9: React.CSSProperties;
+    p10: React.CSSProperties;
+    p11: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
@@ -115,6 +136,9 @@ declare module '@mui/material/styles' {
     p6?: React.CSSProperties;
     p7?: React.CSSProperties;
     p8?: React.CSSProperties;
+    p9?: React.CSSProperties;
+    p10?: React.CSSProperties;
+    p11?: React.CSSProperties;
   }
 }
 
@@ -129,5 +153,8 @@ declare module '@mui/material/Typography' {
     p6: true;
     p7: true;
     p8: true;
+    p9: true;
+    p10: true;
+    p11: true;
   }
 }

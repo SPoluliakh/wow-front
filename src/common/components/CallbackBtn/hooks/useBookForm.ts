@@ -1,12 +1,12 @@
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-import dayjs from 'dayjs';
 import { BookSubmitInterface } from '../../Popup';
 
 const validationSchema = yup.object({
   location: yup.string().min(3, '3 leters min').required('required field').trim(),
   name: yup.string().trim(),
   phone: yup.string().required('required field').trim(),
+  date: yup.date().nullable(),
 });
 
 export const useBookForm = (onSubmit: BookSubmitInterface) => {
@@ -15,7 +15,10 @@ export const useBookForm = (onSubmit: BookSubmitInterface) => {
       location: '',
       name: '',
       phone: '',
+      date: null,
+      time: null,
     },
+
     validationSchema,
     onSubmit,
   });

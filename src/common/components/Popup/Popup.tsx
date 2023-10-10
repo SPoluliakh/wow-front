@@ -21,7 +21,8 @@ export const Popup = ({ children, title, open, onClose, subTitle }: Props) => (
         height: { xs: '100%', sm: 'auto' },
         maxHeight: { xs: '100%' },
         m: 0,
-        p: '40px 24px',
+        p: '32px 24px',
+        pb: '16px',
         backgroundColor: 'primary.c400',
         textAlign: 'center',
         backgroundImage: {
@@ -56,7 +57,7 @@ export const Popup = ({ children, title, open, onClose, subTitle }: Props) => (
     >
       {title}
     </DialogTitle>
-    <Typography component="p" variant="p4" sx={{ color: 'primary.c900' }}>
+    <Typography component="p" variant="p4" sx={{ color: 'primary.c900', mb: '20px' }}>
       {subTitle}
     </Typography>
     {children}

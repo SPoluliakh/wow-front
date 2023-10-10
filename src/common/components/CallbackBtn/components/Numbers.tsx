@@ -7,7 +7,7 @@ export const Numbers = () => (
       component="a"
       color="primary.c900"
       href="tel:8036341263"
-      sx={{ mt: '48px' }}
+      sx={{ mt: '24px' }}
     >
       (803)634-1263
     </Typography>
@@ -16,7 +16,7 @@ export const Numbers = () => (
       component="a"
       color="primary.c900"
       href="tel:8035072505"
-      sx={{ display: 'block', mt: '20px' }}
+      sx={{ display: 'block', mt: '16px' }}
     >
       (803)507-2505
     </Typography>

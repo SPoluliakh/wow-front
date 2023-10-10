@@ -25,7 +25,35 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
   };
 
   return (
-    <Form handleSubmit={handleSubmit} sx={{ flexGrow: 1 }}>
+    <Form
+      handleSubmit={handleSubmit}
+      sx={{
+        flexGrow: 1,
+        '& .css-7rtjrq-MuiFormControl-root-MuiTextField-root, & .css-1f6m251-MuiFormControl-root-MuiTextField-root':
+          {
+            width: '400px',
+            margin: '0 auto',
+            borderRadius: '12px',
+            marginBottom: '24px',
+            background: 'white',
+            overflow: 'hidden',
+            height: '42px',
+            borderColor: 'primary.c300',
+            borderWidth: 1,
+            borderStyle: 'solid',
+          },
+        '& .css-sgajti-MuiInputBase-root-MuiOutlinedInput-root': {
+          height: '42px',
+        },
+        '& .MuiFormControl-root': {
+          pt: 0,
+        },
+        '& .MuiInputBase-inputAdornedEnd::placeholder': { fontFamily: 'inherit', fontSize: '16px' },
+        '& .MuiDateCalendar-root': {
+          backgroundColor: 'primary.c900',
+        },
+      }}
+    >
       <TextField
         name="name"
         placeholder="Your name"
@@ -49,7 +77,6 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
       <MyDatePicker value={values.date} handleChange={handleDateChange} />
       <MyTimePicker value={values.time} handleChange={handleDateChange2} />
       <TextField
-        sx={{ mb: '16px' }}
         name="location"
         placeholder="Service location"
         variant="outlined"

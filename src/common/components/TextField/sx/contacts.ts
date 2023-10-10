@@ -6,7 +6,7 @@ export const contacts: CSSSelectorObjectOrCssVariables<Theme> = {
   width: '400px',
   m: '0 auto',
   lineHeight: '24px',
-  py: '24px',
+  py: '20px',
   '& fieldset span': { display: 'none' },
 
   '&.required .MuiInputLabel-root::after': {
@@ -59,7 +59,7 @@ export const contacts: CSSSelectorObjectOrCssVariables<Theme> = {
     },
     '& .MuiInputBase-input': {
       height: 'auto',
-      py: '11px',
+      py: '8px',
       pl: '16px',
       pr: '48px',
       fontSize: { xs: '16px', sm: '18px' },
@@ -95,5 +95,10 @@ export const contacts: CSSSelectorObjectOrCssVariables<Theme> = {
     '&.Mui-disabled': {
       display: 'none',
     },
+  },
+
+  '& .MuiInputBase-input::placeholder': {
+    fontFamily: 'inherit',
+    fontSize: '16px',
   },
 };

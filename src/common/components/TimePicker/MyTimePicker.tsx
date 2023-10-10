@@ -11,7 +11,13 @@ interface Props {
 export const MyTimePicker = ({ value, handleChange }: Props) => {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <TimePicker value={value} onChange={handleChange} />
+      <TimePicker
+        sx={{
+          border: 'none',
+        }}
+        value={value}
+        onChange={handleChange}
+      />
     </LocalizationProvider>
   );
 };

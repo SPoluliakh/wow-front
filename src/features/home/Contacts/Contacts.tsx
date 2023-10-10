@@ -2,11 +2,9 @@
 import { Box, Container, Typography } from '@mui/material';
 import { useContacts } from './hooks';
 import { CallBack, ContactsList, Map } from './components';
-import { useMedia } from '@/common/hooks';
 
 export const Contacts = () => {
   const contacts = useContacts();
-  const { isSmUp } = useMedia();
 
   return (
     <Box
@@ -16,7 +14,7 @@ export const Contacts = () => {
       <Container>
         <Typography
           component="h2"
-          variant={isSmUp ? 'h4' : 'p9'}
+          variant="h4"
           color="primary.c900"
           sx={{ textAlign: 'center', mb: { xs: '20px', sm: '40px' } }}
         >

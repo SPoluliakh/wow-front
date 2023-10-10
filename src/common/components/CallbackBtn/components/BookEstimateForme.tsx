@@ -48,9 +48,12 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
         '& .MuiFormControl-root': {
           pt: 0,
         },
-        '& .MuiInputBase-inputAdornedEnd::placeholder': { fontFamily: 'inherit', fontSize: '16px' },
+        // '& .MuiInputBase-inputAdornedEnd::placeholder': { fontFamily: 'inherit', fontSize: '16px' },
         '& .MuiDateCalendar-root': {
-          backgroundColor: 'primary.c900',
+          // backgroundColor: 'primary.c900',
+        },
+        '& .Mui-selected': {
+          // backgroundColor: 'primary.c900',
         },
       }}
     >

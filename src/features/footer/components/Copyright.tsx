@@ -12,7 +12,7 @@ export const Copyright = () => {
         &copy; WOW! Clean and shine 2023. All rights reserved.
       </Typography>
       <Typography
-        variant="p6"
+        variant="p8"
         component="p"
         color="primary.c900"
         sx={{ opacity: '0.9', textAlign: 'center' }}

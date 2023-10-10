@@ -1,7 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { ReactElement } from 'react';
 import { useHref } from '../hooks';
-import { useMedia } from '@/common/hooks';
 
 interface Props {
   icon: ReactElement;
@@ -11,7 +10,6 @@ interface Props {
 
 export const ContactsListItem = ({ icon, title, text }: Props) => {
   const href = useHref(title);
-  const { isSmUp, isMdUp } = useMedia();
 
   return (
     <Box component="a" href={href} target="_blank">
@@ -45,11 +43,11 @@ export const ContactsListItem = ({ icon, title, text }: Props) => {
         >
           {icon}
 
-          <Typography variant={isSmUp ? 'p3' : 'p9'} component="h4" sx={{ ml: '16px' }}>
+          <Typography variant="p6" component="h4" sx={{ ml: '16px' }}>
             {title}
           </Typography>
         </Box>
-        <Typography variant={isMdUp ? 'p1' : 'p11'} component="p">
+        <Typography variant="p7" component="p">
           {text}
         </Typography>
       </Box>

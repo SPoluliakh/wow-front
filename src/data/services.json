@@ -3,54 +3,54 @@
     "id": 1,
     "title": "Pressure Washing",
     "text": "Pressure washing is the use of high-pressure water spray to remove loose paint, mold, grime, dust, mud, and dirt from surfaces and objects such as buildings, vehicles and concrete surfaces.We offer a full suite of pressure washing services and we can not wait to make your property look great!",
-    "src": "/images/services/1.jpg"
+    "src": { "desk": "/images/services/1.jpg", "mob": "/images/services/1-mob.jpg" }
   },
   {
     "id": 2,
     "title": "Softwash",
     "text": "Soft washing is a low-pressure washing technique that uses a combination of soaps, sodium hypochlorite, water to clean exterior surfaces, such as roofs, siding, fences, driveways and sidewalks, without damaging the surface.Using state of the art equipment, cleaning solutions and detergents we deliver high-level soft washing techniques, to ensure your property is safely and properly cleaned.",
-    "src": "/images/services/2.jpg"
+    "src": { "desk": "/images/services/2.jpg", "mob": "/images/services/2-mob.jpg" }
   },
   {
     "id": 3,
     "title": "Vinyl Siding Restoration",
     "text": "This is a 3 step process, first we clean to remove any organics, second we remove oxidation from the vinyl siding and let dry, third the application we use, is a combination of spraying and brushing, this brings back that luster and shine of a satin finish, that you had when the siding was installed new. The restoration can last up to 5 to 10 years depending on the ailments around and also helps with organics not to stick to your siding as once before.",
-    "src": "/images/services/3.jpg"
+    "src": { "desk": "/images/services/3.jpg", "mob": "/images/services/3-mob.jpg" }
   },
   {
     "id": 4,
     "title": "Oxidation removal",
     "text": "Oxidation removal is a restoration process which entails professional restoration cleaning agents and is labor intensive. Vinyl siding oxidation is something that a lot of homeowners have to deal with. It is very important to remove oxidation on vinyl siding. Apart from fading and other aesthetic concerns, oxidation can lead to the degradation or deterioration of your exterior cladding. Regular maintenance ensures that your vinyl siding not only looks good, but it will also last for many years to come. Our cleaning solution will remove all the oxidation.",
-    "src": "/images/services/4.jpg"
+    "src": { "desk": "/images/services/4.jpg", "mob": "/images/services/4-mob.jpg" }
   },
   {
     "id": 5,
     "title": "Surface/Driveway/Concrete",
     "text": "Concrete Cleaning uses high pressure hot or cold water power washing methods to deliver a deep cleaning that will get your business property back to looking its very best in almost no time! It isn't just for concrete. Our services are also ideal for your property's brick and stone surfaces.We can transform the look of your driveway, walkway, sidewalks, paver stones and many more! With our professional equipment we will remove years of dirt, mold, mildew and algae from a variety of surfaces.",
-    "src": "/images/services/5.jpg"
+    "src": { "desk": "/images/services/5.jpg", "mob": "/images/services/5-mob.jpg" }
   },
   {
     "id": 6,
     "title": "Roof Cleaning",
     "text": "Roof cleaning is the process of removing algae, mold, mildew, lichen and moss from roofs. Also cleaning oxidation on metal roofs. Cleaning can extend the duration of a roof's ability to function.We are able to remove years of organic growth while restoring the appearance of your roof and adding instant curb appeal! We recommend regular roof cleanings to ensure that you get the best longevity out of your shingles.",
-    "src": "/images/services/6.jpg"
+    "src": { "desk": "/images/services/6.jpg", "mob": "/images/services/6-mob.jpg" }
   },
   {
     "id": 7,
     "title": "Gutter cleaning",
     "text": "Gutter cleaning is the process of removing any debris, dirt, and leaves from your gutters and downspouts that clog your gutter system and stop rainwater from flowing freely from the roof to the ground. Cleaning gutters quarterly helps avoid unwanted guests nesting in your gutter channels. When gutters are constantly overflowing due to neglect, they have the potential to also damage your foundation, deck, roof or landscape.",
-    "src": "/images/services/7.jpg"
+    "src": { "desk": "/images/services/7.jpg", "mob": "/images/services/7-mob.jpg" }
   },
   {
     "id": 8,
     "title": "Window cleaning",
     "text": "We clean and polish your windows, mirrors, light fixtures using soft lint-free cloths and professional cleaning solutions.",
-    "src": "/images/services/8.jpg"
+    "src": { "desk": "/images/services/8.jpg", "mob": "/images/services/8-mob.jpg" }
   },
   {
     "id": 9,
     "title": "Car detailing",
     "text": "Car detailing is the process of improving the condition of a vehicle's interior and exterior appearance. This involves the most thorough clean possible, any enhancement to deal with minor defects such as clear coat scratches, and protection to maintain the condition.While you are working in your office, or relaxing at home, we will ensure your car is well maintained, clean, and enjoyable for you.",
-    "src": "/images/services/9.jpg"
+    "src": { "desk": "/images/services/9.jpg", "mob": "/images/services/9-mob.jpg" }
   }
 ]

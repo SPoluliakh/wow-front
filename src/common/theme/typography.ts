@@ -6,64 +6,108 @@ export const setTypography = (theme: Theme) => {
     ...theme.typography,
     h1: {
       fontFamily: 'var(--font-poppins)',
-      fontSize: '80px',
-      lineHeight: 1.5,
-      fontWeight: 700,
-    },
-    h2: {
-      fontFamily: 'var(--font-poppins)',
-      fontSize: '56px',
-      lineHeight: 1.5,
-      fontWeight: 300,
-    },
-    h3: {
-      fontFamily: 'var(--font-poppins)',
-      fontSize: '32px',
-      lineHeight: 1.2,
-      fontWeight: 700,
-      textTransform: 'uppercase',
-    },
-    h4: {
-      fontFamily: 'var(--font-poppins)',
-      fontSize: '24px',
-      lineHeight: 1.5,
-      fontWeight: 600,
-    },
-    h5: {
-      fontFamily: 'var(--font-poppins)',
       fontSize: '40px',
       lineHeight: 1.5,
       fontWeight: 700,
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '80px',
+        lineHeight: 1.5,
+        fontWeight: 700,
+      },
     },
-    h6: {
+    h2: {
       fontFamily: 'var(--font-poppins)',
       fontSize: '32px',
       lineHeight: 1.5,
       fontWeight: 300,
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '56px',
+        lineHeight: 1.5,
+        fontWeight: 300,
+      },
     },
-    p1: {
+    h3: {
       fontFamily: 'var(--font-poppins)',
       fontSize: '20px',
       lineHeight: 1.2,
+      fontWeight: 700,
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '32px',
+        lineHeight: 1.2,
+        fontWeight: 700,
+      },
+    },
+    h4: {
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '20px',
+      lineHeight: 1.5,
+      fontWeight: 600,
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '24px',
+        lineHeight: 1.5,
+        fontWeight: 600,
+      },
+    },
+    h5: {
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '20px',
+      lineHeight: 1.5,
+      fontWeight: 500,
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '24px',
+        lineHeight: 1.5,
+        fontWeight: 500,
+      },
+    },
+
+    p1: {
+      fontFamily: 'var(--font-poppins)',
+      fontSize: '16px',
+      lineHeight: 1.2,
       fontWeight: 400,
+      [theme.breakpoints.up('md')]: {
+        fontSize: '20px',
+        lineHeight: 1.2,
+        fontWeight: 400,
+      },
     },
     p2: {
       fontFamily: 'var(--font-poppins)',
-      fontSize: '24px',
+      fontSize: '16px',
       lineHeight: 1,
       fontWeight: 300,
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '20px',
+        lineHeight: 1.2,
+        fontWeight: 300,
+      },
+      [theme.breakpoints.up('md')]: {
+        fontSize: '24px',
+        lineHeight: 1.2,
+        fontWeight: 300,
+      },
     },
     p3: {
       fontFamily: 'var(--font-poppins)',
-      fontSize: '24px',
+      fontSize: '16px',
       lineHeight: 1.5,
       fontWeight: 600,
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '24px',
+        lineHeight: 1.5,
+        fontWeight: 600,
+      },
     },
     p4: {
       fontFamily: 'var(--font-poppins)',
-      fontSize: '24px',
+      fontSize: '16px',
       lineHeight: 1.5,
       fontWeight: 400,
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '24px',
+        lineHeight: 1.5,
+        fontWeight: 400,
+      },
     },
     p5: {
       fontFamily: 'var(--font-poppins)',
@@ -73,37 +117,29 @@ export const setTypography = (theme: Theme) => {
     },
     p6: {
       fontFamily: 'var(--font-poppins)',
-      fontSize: '12px',
-      lineHeight: 1.2,
-      fontWeight: 300,
+      fontSize: '20px',
+      lineHeight: 1.5,
+      fontWeight: 600,
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '24px',
+        lineHeight: 1.5,
+        fontWeight: 600,
+      },
     },
     p7: {
       fontFamily: 'var(--font-poppins)',
-      fontSize: '20px',
-      lineHeight: 1.5,
-      fontWeight: 300,
+      fontSize: '18px',
+      lineHeight: 1.2,
+      fontWeight: 400,
+      [theme.breakpoints.up('md')]: {
+        fontSize: '20px',
+        lineHeight: 1.2,
+        fontWeight: 400,
+      },
     },
     p8: {
       fontFamily: 'var(--font-poppins)',
-      fontSize: '16px',
-      lineHeight: 1.5,
-      fontWeight: 300,
-    },
-    p9: {
-      fontFamily: 'var(--font-poppins)',
-      fontSize: '20px',
-      lineHeight: 1.5,
-      fontWeight: 600,
-    },
-    p10: {
-      fontFamily: 'var(--font-poppins)',
-      fontSize: '16px',
-      lineHeight: 1.5,
-      fontWeight: 600,
-    },
-    p11: {
-      fontFamily: 'var(--font-poppins)',
-      fontSize: '18px',
+      fontSize: '12px',
       lineHeight: 1.5,
       fontWeight: 400,
     },
@@ -120,9 +156,6 @@ declare module '@mui/material/styles' {
     p6: React.CSSProperties;
     p7: React.CSSProperties;
     p8: React.CSSProperties;
-    p9: React.CSSProperties;
-    p10: React.CSSProperties;
-    p11: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
@@ -135,9 +168,6 @@ declare module '@mui/material/styles' {
     p6?: React.CSSProperties;
     p7?: React.CSSProperties;
     p8?: React.CSSProperties;
-    p9?: React.CSSProperties;
-    p10?: React.CSSProperties;
-    p11?: React.CSSProperties;
   }
 }
 
@@ -152,8 +182,5 @@ declare module '@mui/material/Typography' {
     p6: true;
     p7: true;
     p8: true;
-    p9: true;
-    p10: true;
-    p11: true;
   }
 }

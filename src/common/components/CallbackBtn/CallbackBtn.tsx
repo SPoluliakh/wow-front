@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import { CallbackForm } from './components';
 import { Popup } from '../Popup';
 import { useBook, useCallback, usePopup } from '../Popup/hooks';
@@ -7,6 +7,7 @@ import { BookEstimateForme } from './components/BookEstimateForme';
 import { AnswerForm } from '@/common/AnswerBtn/components';
 import { useAnswer } from '@/common/hooks/useAnswer';
 import { ReactNode } from 'react';
+// import { useMedia } from '@/common/hooks';
 
 interface Props {
   variant: string;
@@ -19,11 +20,14 @@ export const CallbackBtn = ({ variant, sx, icon }: Props) => {
   const { handleClose, handleOpen, isOpen } = usePopup(handleAnswerClose);
   const { onSubmit } = useCallback(handleAnswerOpen);
   const { onSubmit: handleSubmit } = useBook(handleAnswerOpen);
+  // const { isSmUp } = useMedia();
 
   return (
     <>
-      <Button onClick={handleOpen} sx={{ ...sx }}>
+      <Button onClick={handleOpen} sx={{ ...sx, letterSpacing: 0 }}>
+        {/* <Typography component="span" variant={isSmUp ? 'p1' : 'p5'}> */}
         {icon ?? variant}
+        {/* </Typography> */}
       </Button>
       <Popup
         title={!isAnswer ? 'Interested in our services?' : '"Thank You!"'}

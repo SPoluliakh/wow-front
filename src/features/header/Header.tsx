@@ -5,11 +5,11 @@ import { useMedia } from '@/common/hooks';
 import { useLogoSize } from './hooks/useLogoSize';
 
 export const Header = () => {
-  const { isSmUp, isMdUp } = useMedia();
+  const { isSmUp } = useMedia();
   const variant = useLogoSize();
 
   return (
-    <Box sx={{ backgroundColor: 'primary.c800', py: isMdUp ? '6px' : 0 }}>
+    <Box sx={{ backgroundColor: 'primary.c800' }}>
       <Container sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Logo variant={variant} />
         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>

@@ -9,7 +9,7 @@ export const CallBackWrapper = ({ children }: Props) => (
   <Box
     sx={{
       backgroundColor: 'primary.c100',
-      mt: '80px',
+      mt: { xs: '20px', sm: '30px', md: '80px' },
       p: '40px 24px',
       borderRadius: '12px',
       border: '2px solid #1C3B77',

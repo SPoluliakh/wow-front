@@ -24,7 +24,18 @@ export const ServiceList = ({ services }: Props) => {
       }}
     >
       {services.map(({ id, title, text, src }) => (
-        <Grid item key={id} sx={{ p: '0 !important' }}>
+        <Grid
+          item
+          key={id}
+          sx={{
+            p: '0 !important',
+            flexBasis: {
+              xs: '100%',
+              sm: 'calc((100% - 30px * 1) / 2)',
+              md: 'calc((100% - 20px * 2) / 3)',
+            },
+          }}
+        >
           <ServiceListItem title={title} text={text} src={src} width={width} height={height} />
         </Grid>
       ))}

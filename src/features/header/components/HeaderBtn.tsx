@@ -30,11 +30,11 @@ export const HeaderBtn = () => {
       </ListItem>
       <ListItem sx={{ p: 0 }}>
         <CallbackBtn
-          sx={{ backgroundColor: 'primary.c100', p: 0, border: 'none' }}
+          sx={{ backgroundColor: 'primary.c100', color: 'primary.c900', p: 0, border: 'none' }}
           icon={
             <AttachMoneyIcon
               sx={{
-                color: 'primary.c900',
+                color: 'currentColor',
                 width: { xs: '24px', sm: '32px' },
                 height: { xs: '24px', sm: '32px' },
               }}

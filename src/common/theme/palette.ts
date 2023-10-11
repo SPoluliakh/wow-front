@@ -15,6 +15,7 @@ export const palette: PaletteOptions = {
   accent: {
     main: '#E30613',
     c900: '#E30613',
+    c800: '#3963B4',
   },
   error: {
     main: '#FD2928',
@@ -34,6 +35,7 @@ declare module '@mui/material/styles' {
     accent?: {
       main: string;
       c900: string;
+      c800: string;
     };
   }
 
@@ -63,5 +65,6 @@ declare module '@mui/material/styles' {
   interface AccentPalette {
     main: string;
     c900: string;
+    c800: string;
   }
 }

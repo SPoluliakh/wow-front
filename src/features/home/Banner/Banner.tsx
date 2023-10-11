@@ -56,7 +56,7 @@ export const Banner = () => {
             mb: { xs: '40px', sm: 0 },
             pt: { xs: '16px', sm: '24px' },
             pb: 0,
-            px: { xs: '14px', sm: 0 },
+            px: { xs: '14px', sm: '24px' },
           }}
         >
           {valuation.map(({ id, text }) => (

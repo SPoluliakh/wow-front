@@ -17,6 +17,7 @@ export const CallbackForm = ({ onSubmit, variant, numbers }: Props) => {
   return (
     <Form handleSubmit={handleSubmit} sx={{ flexGrow: 1 }}>
       <TextField
+        sx={{ width: '100%', maxWidth: '400px', mb: '8px', pt: 0 }}
         name="name"
         placeholder="Your name"
         variant="outlined"
@@ -28,7 +29,7 @@ export const CallbackForm = ({ onSubmit, variant, numbers }: Props) => {
         helperText={errors.name && touched.name && errors.name}
       />
       <TextField
-        sx={{ mb: '16px' }}
+        sx={{ mb: '40px', width: '100%', maxWidth: '400px', pt: 0 }}
         name="phone"
         placeholder="Contact number"
         variant="outlined"

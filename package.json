@@ -12,6 +12,7 @@
     "prettier:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx,md}' --config .prettierrc"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.13.7",

@@ -51,3 +51,12 @@ body {
 .MuiPickersLayout-actionBar {
   background-color: #edf1ff;
 }
+
+.css-h7ebex-MuiButtonBase-root-MuiMenuItem-root-MuiMultiSectionDigitalClockSection-item.Mui-selected,
+.css-1xgqdfh-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: #1c3b77 !important;
+}
+
+.css-1lct6q7-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  border-color: #1c3b77;
+}

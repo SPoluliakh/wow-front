@@ -5,7 +5,7 @@ import { useMedia } from '@/common/hooks';
 interface Props {
   width: number;
   height: number;
-  src: string;
+  src: { desk: string; mob: string };
   title: string;
   text: string;
 }
@@ -24,11 +24,11 @@ export const ServiceListItem = ({ width, height, src, title, text }: Props) => {
         cursor: 'pointer',
       }}
     >
-      <Image src={src} alt={title} width={width} height={height} />
+      <Image src={isSmUp ? src.desk : src.mob} alt={title} width={width} height={height} />
       <Box
         sx={{
           position: 'absolute',
-          top: { xs: '275px', sm: '246px', md: '292px' },
+          top: { xs: '207px', sm: '246px', md: '292px' },
           left: 0,
           width: `100%`,
           height: `${height}px`,
@@ -43,7 +43,7 @@ export const ServiceListItem = ({ width, height, src, title, text }: Props) => {
         }}
       >
         <Typography
-          variant={isSmUp ? 'h4' : 'p9'}
+          variant="h5"
           component="h4"
           color="primary.c100"
           sx={{ textShadow: '0px 4px 4px rgba(0, 0, 0, 0.75)', mb: '16px', fontWeight: 500 }}

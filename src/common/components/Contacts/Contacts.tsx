@@ -1,11 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import CallIcon from '@mui/icons-material/Call';
 import MailOutline from '@mui/icons-material/MailOutline';
-import { useMedia } from '@/common/hooks';
 
 export const Contacts = () => {
-  const { isSmUp } = useMedia();
-
   return (
     <Box
       sx={{
@@ -18,7 +15,7 @@ export const Contacts = () => {
         color="primary.c900"
         sx={{
           display: 'flex',
-          gap: isSmUp ? '8px' : '24px',
+          gap: { xs: '24px', sm: '8px' },
           alignItems: 'center',
           justifyContent: 'center',
         }}
@@ -29,6 +26,7 @@ export const Contacts = () => {
           component="a"
           color="primary.c900"
           href="mailto:wowcleanandshine@gmail.com"
+          sx={{ '&:hover': { textDecoration: 'underline' } }}
         >
           wowcleanandshine@gmail.com
         </Typography>
@@ -38,7 +36,7 @@ export const Contacts = () => {
         color="primary.c900"
         sx={{
           display: 'flex',
-          gap: isSmUp ? '8px' : '24px',
+          gap: { xs: '24px', sm: '8px' },
           alignItems: 'center',
           justifyContent: 'center',
         }}
@@ -49,12 +47,18 @@ export const Contacts = () => {
           component="a"
           color="primary.c900"
           href="tel:8036341263"
-          sx={{ mr: isSmUp ? '16px' : 0 }}
+          sx={{ mr: { sm: '16px' }, '&:hover': { textDecoration: 'underline' } }}
         >
           (803)634-1263
         </Typography>
 
-        <Typography variant="p5" component="a" color="primary.c900" href="tel:8035072505">
+        <Typography
+          variant="p5"
+          component="a"
+          color="primary.c900"
+          href="tel:8035072505"
+          sx={{ '&:hover': { textDecoration: 'underline' } }}
+        >
           (803)507-2505
         </Typography>
       </Box>

@@ -1,9 +1,11 @@
 import { useMedia } from '@/common/hooks';
 
 export const useCartSize = () => {
-  const { isMdUp } = useMedia();
+  const { isSmUp, isMdUp } = useMedia();
 
   if (isMdUp) return { width: 380, height: 440 };
 
-  return { width: 339, height: 392 };
+  if (isSmUp) return { width: 339, height: 392 };
+
+  return { width: 361, height: 325 };
 };

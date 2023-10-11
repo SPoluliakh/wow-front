@@ -24,20 +24,21 @@ export const setComponentButton = (theme: Theme) => {
           paddingBottom: '8px',
           paddingLeft: '16px',
           paddingRight: '16px',
-          fontSize: '20px',
+          fontSize: '16px',
 
           ...(ownerState.size === 'medium' &&
             ownerState.variant === 'text' && {
               [theme.breakpoints.up('xs')]: {
-                height: '32px',
+                minHeight: '32px',
                 minWidth: '56px',
+                width: 'fill-available',
               },
             }),
           ...(ownerState.size === 'medium' &&
             ownerState.variant === 'contained' && {
               [theme.breakpoints.up('xs')]: {
-                height: '32px',
-                width: '56px',
+                minHeight: '32px',
+                minWidth: '56px',
               },
               [theme.breakpoints.down('sm')]: {
                 width: '100%',
@@ -46,15 +47,17 @@ export const setComponentButton = (theme: Theme) => {
           ...(ownerState.size === 'medium' &&
             ownerState.variant === 'text' && {
               [theme.breakpoints.up('sm')]: {
-                height: '48px',
+                minHeight: '48px',
                 minWidth: '64px',
+                fontSize: '20px',
+                width: 'max-content',
               },
             }),
           ...(ownerState.size === 'medium' &&
             ownerState.variant === 'contained' && {
               [theme.breakpoints.up('sm')]: {
-                height: '48px',
-                width: '64px',
+                minHeight: '48px',
+                minWidth: '64px',
               },
               [theme.breakpoints.down('md')]: {
                 width: '100%',

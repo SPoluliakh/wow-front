@@ -19,10 +19,10 @@ export const BannerInfo = () => {
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <Logo variant={isSmUp ? 'banner' : 'bannerMobile'} />
         <Box>
-          <Typography component="h1" variant={isSmUp ? 'h1' : 'h5'} color="primary.c900">
+          <Typography component="h1" variant="h1" color="primary.c900">
             WOW!
           </Typography>
-          <Typography component="h2" variant={isSmUp ? 'h2' : 'h6'} color="accent.c900">
+          <Typography component="h2" variant="h2" color="accent.c900">
             CLEAN & SHINE
           </Typography>
         </Box>

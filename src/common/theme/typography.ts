@@ -11,8 +11,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 700,
       [theme.breakpoints.up('sm')]: {
         fontSize: '80px',
-        lineHeight: 1.5,
-        fontWeight: 700,
       },
     },
     h2: {
@@ -22,8 +20,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 300,
       [theme.breakpoints.up('sm')]: {
         fontSize: '56px',
-        lineHeight: 1.5,
-        fontWeight: 300,
       },
     },
     h3: {
@@ -33,8 +29,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 700,
       [theme.breakpoints.up('sm')]: {
         fontSize: '32px',
-        lineHeight: 1.2,
-        fontWeight: 700,
       },
     },
     h4: {
@@ -44,8 +38,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 600,
       [theme.breakpoints.up('sm')]: {
         fontSize: '24px',
-        lineHeight: 1.5,
-        fontWeight: 600,
       },
     },
     h5: {
@@ -55,8 +47,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 500,
       [theme.breakpoints.up('sm')]: {
         fontSize: '24px',
-        lineHeight: 1.5,
-        fontWeight: 500,
       },
     },
 
@@ -67,8 +57,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 400,
       [theme.breakpoints.up('md')]: {
         fontSize: '20px',
-        lineHeight: 1.2,
-        fontWeight: 400,
       },
     },
     p2: {
@@ -78,13 +66,9 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 300,
       [theme.breakpoints.up('sm')]: {
         fontSize: '20px',
-        lineHeight: 1.2,
-        fontWeight: 300,
       },
       [theme.breakpoints.up('md')]: {
         fontSize: '24px',
-        lineHeight: 1.2,
-        fontWeight: 300,
       },
     },
     p3: {
@@ -94,8 +78,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 600,
       [theme.breakpoints.up('sm')]: {
         fontSize: '24px',
-        lineHeight: 1.5,
-        fontWeight: 600,
       },
     },
     p4: {
@@ -105,8 +87,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 400,
       [theme.breakpoints.up('sm')]: {
         fontSize: '24px',
-        lineHeight: 1.5,
-        fontWeight: 400,
       },
     },
     p5: {
@@ -122,8 +102,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 600,
       [theme.breakpoints.up('sm')]: {
         fontSize: '24px',
-        lineHeight: 1.5,
-        fontWeight: 600,
       },
     },
     p7: {
@@ -133,8 +111,6 @@ export const setTypography = (theme: Theme) => {
       fontWeight: 400,
       [theme.breakpoints.up('md')]: {
         fontSize: '20px',
-        lineHeight: 1.2,
-        fontWeight: 400,
       },
     },
     p8: {

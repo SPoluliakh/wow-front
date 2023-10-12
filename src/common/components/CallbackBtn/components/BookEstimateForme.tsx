@@ -1,5 +1,4 @@
 import { Button } from '@mui/material';
-import { Dayjs } from 'dayjs';
 import { useBookForm } from '../hooks';
 import { TextField } from '../../TextField';
 import { Form } from '../../Form';
@@ -7,6 +6,8 @@ import { BookSubmitInterface } from '../../Popup';
 import { Numbers } from './Numbers';
 import { MyDatePicker } from '../../DatePicker';
 import { MyTimePicker } from '../../TimePicker';
+import { useChangeData } from '../../DatePicker/hooks';
+import { useChangeTime } from '../../TimePicker/hooks';
 
 interface Props {
   onSubmit: BookSubmitInterface;
@@ -17,12 +18,8 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
   const { setFieldValue, errors, values, touched, handleChange, handleBlur, handleSubmit } =
     useBookForm(onSubmit);
 
-  const handleDateChange = (date: Date | null) => {
-    setFieldValue('date', date);
-  };
-  const handleDateChange2 = (time: Dayjs | null) => {
-    setFieldValue('time', time);
-  };
+  const handleDateChange = useChangeData(setFieldValue);
+  const handleTimeChange = useChangeTime(setFieldValue);
 
   return (
     <Form
@@ -48,13 +45,6 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
         '& .MuiFormControl-root': {
           pt: 0,
         },
-        // '& .MuiInputBase-inputAdornedEnd::placeholder': { fontFamily: 'inherit', fontSize: '16px' },
-        '& .MuiDateCalendar-root': {
-          // backgroundColor: 'primary.c900',
-        },
-        '& .Mui-selected': {
-          // backgroundColor: 'primary.c900',
-        },
       }}
     >
       <TextField
@@ -78,7 +68,7 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
         helperText={errors.phone && touched.phone && errors.phone}
       />
       <MyDatePicker value={values.date} handleChange={handleDateChange} />
-      <MyTimePicker value={values.time} handleChange={handleDateChange2} />
+      <MyTimePicker value={values.time} handleChange={handleTimeChange} />
       <TextField
         name="location"
         placeholder="Service location"

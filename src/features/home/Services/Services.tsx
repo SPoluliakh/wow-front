@@ -2,11 +2,9 @@
 import { Box, Container, Typography } from '@mui/material';
 import { ServiceList } from './components';
 import { useServices } from './hooks';
-import { useMedia } from '@/common/hooks';
 
 export const Services = () => {
   const services = useServices();
-  const { isSmUp } = useMedia();
 
   return (
     <Box
@@ -16,7 +14,7 @@ export const Services = () => {
       <Container>
         <Typography
           component="h2"
-          variant={isSmUp ? 'h4' : 'p9'}
+          variant="h4"
           color="primary.c900"
           sx={{ textAlign: 'center', mb: { xs: '20px', sm: '40px' } }}
         >

@@ -1,9 +1,10 @@
 import { Box } from '@mui/material';
 import { SxPropsInterface } from '@/common/interfaces/interfaces';
+import { FormEvent } from 'react';
 
 interface Props {
   handleSubmit: () => void;
-  handleReset?: (e: any) => void;
+  handleReset?: (e: FormEvent) => void;
   children: React.ReactNode;
   sx?: SxPropsInterface;
 }

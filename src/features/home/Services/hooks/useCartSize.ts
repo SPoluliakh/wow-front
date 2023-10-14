@@ -7,5 +7,5 @@ export const useCartSize = () => {
 
   if (isSmUp) return { width: 339, height: 392 };
 
-  return { width: 361, height: 325 };
+  return { width: 328, height: 344 };
 };

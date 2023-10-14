@@ -28,17 +28,17 @@ export const ServiceListItem = ({ width, height, src, title, text }: Props) => {
       <Box
         sx={{
           position: 'absolute',
-          top: { xs: '207px', sm: '246px', md: '292px' },
+          top: { xs: '225px', sm: '267px', md: '300px' },
           left: 0,
           width: `100%`,
-          height: `${height}px`,
+          height: '440px',
           px: '20px',
           pt: '20px',
           backgroundColor: 'primary.c600',
           transition: 'top 300ms linear',
 
           '.MuiGrid-item:hover &, .MuiGrid-item:active &': {
-            top: 0,
+            top: { xs: -47, sm: 0 },
           },
         }}
       >
@@ -46,7 +46,7 @@ export const ServiceListItem = ({ width, height, src, title, text }: Props) => {
           variant="h5"
           component="h4"
           color="primary.c100"
-          sx={{ textShadow: '0px 4px 4px rgba(0, 0, 0, 0.75)', mb: '16px', fontWeight: 500 }}
+          sx={{ textShadow: '0px 4px 4px rgba(0, 0, 0, 0.75)', mb: '8px' }}
         >
           {title}
         </Typography>

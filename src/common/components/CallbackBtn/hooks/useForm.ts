@@ -4,7 +4,7 @@ import { SubmitInterface } from '../../Popup';
 
 const validationSchema = yup.object({
   name: yup.string().min(3, '3 leters min').required('required field').trim(),
-  phone: yup.string().required('required field').trim(),
+  phone: yup.number().typeError('Only numbers are allowed').required('required field'),
 });
 
 export const useForm = (onSubmit: SubmitInterface) => {

@@ -39,6 +39,9 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
           borderWidth: 1,
           borderStyle: 'solid',
         },
+        '& .css-sgajti-MuiInputBase-root-MuiOutlinedInput-root': {
+          height: '42px',
+        },
         '& .css-1ub4y49-MuiInputBase-root-MuiOutlinedInput-root': {
           height: '42px',
         },

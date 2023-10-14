@@ -30,10 +30,11 @@ export const ServiceList = ({ services }: Props) => {
           sx={{
             p: '0 !important',
             flexBasis: {
-              xs: '100%',
+              xs: 'calc(100% - 30px)',
               sm: 'calc((100% - 30px * 1) / 2)',
               md: 'calc((100% - 20px * 2) / 3)',
             },
+            mx: 'auto',
           }}
         >
           <ServiceListItem title={title} text={text} src={src} width={width} height={height} />

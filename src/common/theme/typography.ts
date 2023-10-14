@@ -92,8 +92,11 @@ export const setTypography = (theme: Theme) => {
     p5: {
       fontFamily: 'var(--font-poppins)',
       fontSize: '16px',
-      lineHeight: 1.5,
+      lineHeight: 1.2,
       fontWeight: 400,
+      [theme.breakpoints.up('md')]: {
+        lineHeight: 1.5,
+      },
     },
     p6: {
       fontFamily: 'var(--font-poppins)',

@@ -10,7 +10,7 @@ interface Props {
 export const MyDatePicker = ({ value, handleChange }: Props) => {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DatePicker value={value} onChange={handleChange} sx={{ width: '100%' }} />
+      <DatePicker value={value} onChange={handleChange} />
     </LocalizationProvider>
   );
 };

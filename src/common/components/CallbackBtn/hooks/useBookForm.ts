@@ -5,7 +5,7 @@ import { BookSubmitInterface } from '../../Popup';
 const validationSchema = yup.object({
   location: yup.string().min(3, '3 leters min').required('required field').trim(),
   name: yup.string().trim(),
-  phone: yup.string().required('required field').trim(),
+  phone: yup.number().typeError('Only numbers are allowed').required('required field'),
   date: yup.date().nullable(),
 });
 

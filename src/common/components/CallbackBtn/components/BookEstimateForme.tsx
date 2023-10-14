@@ -26,22 +26,23 @@ export const BookEstimateForme = ({ onSubmit, variant }: Props) => {
       handleSubmit={handleSubmit}
       sx={{
         flexGrow: 1,
-        '& .css-7rtjrq-MuiFormControl-root-MuiTextField-root, & .css-1f6m251-MuiFormControl-root-MuiTextField-root':
-          {
-            width: '400px',
-            margin: '0 auto',
-            borderRadius: '12px',
-            marginBottom: '24px',
-            background: 'white',
-            overflow: 'hidden',
-            height: '42px',
-            borderColor: 'primary.c300',
-            borderWidth: 1,
-            borderStyle: 'solid',
-          },
-        '& .css-sgajti-MuiInputBase-root-MuiOutlinedInput-root': {
+        '& .css-z3c6am-MuiFormControl-root-MuiTextField-root': {
+          maxWidth: '400px',
+          width: '100%',
+          margin: '0 auto',
+          borderRadius: '12px',
+          marginBottom: '24px',
+          background: 'white',
+          overflow: 'hidden',
+          height: '42px',
+          borderColor: 'primary.c300',
+          borderWidth: 1,
+          borderStyle: 'solid',
+        },
+        '& .css-1ub4y49-MuiInputBase-root-MuiOutlinedInput-root': {
           height: '42px',
         },
+
         '& .MuiFormControl-root': {
           pt: 0,
         },

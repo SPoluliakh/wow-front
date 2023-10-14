@@ -3,7 +3,8 @@ import { Theme } from '@mui/material';
 
 export const contacts: CSSSelectorObjectOrCssVariables<Theme> = {
   fontFamily: 'var(--font-poppins)',
-  width: '400px',
+  maxWidth: '400px',
+  width: '100%',
   m: '0 auto',
   lineHeight: '24px',
   py: '20px',

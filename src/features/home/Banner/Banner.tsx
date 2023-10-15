@@ -14,14 +14,18 @@ export const Banner = () => {
         width: '100%',
         overflow: 'hidden',
         backgroundImage: {
-          xs: 'url("/images/banner/desktop.png")',
+          xs: 'url("/images/banner/mobile.png")',
+          sm: 'url("/images/banner/tablet.png")',
+          md: 'url("/images/banner/desktop.png")',
         },
         backgroundRepeat: 'no-repeat',
         backgroundPosition: {
           xs: 'center top',
         },
         backgroundSize: {
-          xs: '100vw 1080px',
+          xs: '100vw 513px',
+          sm: '100vw 487px',
+          md: '100vw 630px',
         },
       }}
     >

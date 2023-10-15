@@ -11,9 +11,9 @@ export const Logo = ({ variant }: Props) => {
   const data = useLogoData(variant);
 
   return (
-    <StyledLink href="/" sx={{ cursor: 'pointer', my: 'auto' }}>
+    <StyledLink href="/" sx={{ cursor: 'pointer' }}>
       <Image
-        src={data.src}
+        src="/icons/logo/logo.svg"
         alt="logo"
         width={data.width}
         height={data.height}

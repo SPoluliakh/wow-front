@@ -7,10 +7,11 @@ export const HeaderBtn = () => {
   return (
     <List
       sx={{
-        ml: { xs: '24px', sm: '40px', md: '80px' },
+        ml: { sm: '40px', md: '80px' },
         display: 'flex',
         alignItems: 'center',
         gap: { xs: '16px', sm: '24px' },
+        p: 0,
       }}
     >
       <ListItem sx={{ p: 0 }}>

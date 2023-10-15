@@ -10,7 +10,7 @@ export const Header = () => {
 
   return (
     <Box sx={{ backgroundColor: 'primary.c800' }}>
-      <Container sx={{ display: 'flex', justifyContent: 'space-between' }}>
+      <Container sx={{ display: 'flex', justifyContent: 'space-between', py: '4px' }}>
         <Logo variant={variant} />
         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
           {isSmUp && <NavItems />}

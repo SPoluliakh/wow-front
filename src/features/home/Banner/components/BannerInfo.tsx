@@ -16,7 +16,9 @@ export const BannerInfo = () => {
         flexDirection: { xs: 'column', md: 'row' },
       }}
     >
-      <Box sx={{ display: 'flex', alignItems: 'center' }}>
+      <Box
+        sx={{ display: 'flex', alignItems: 'center', gap: { xs: '8px', sm: '56px', md: '24px' } }}
+      >
         <Logo variant={isSmUp ? 'banner' : 'bannerMobile'} />
         <Box>
           <Typography component="h1" variant="h1" color="primary.c900">

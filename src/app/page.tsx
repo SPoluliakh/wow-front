@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'WOW Clean&Shine',
     description: 'Residential and commercial exterior cleaning services in Aiken and the CSRA',
-    images: '/images/og/og-img.jpg',
+    images: 'https://wowcleanandshine.com/images/og/og-img.jpg',
     url: 'https://wowcleanandshine.com/',
     siteName: 'WOW Clean&Shine',
   },

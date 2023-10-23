@@ -44,7 +44,7 @@ export const ServiceListItem = ({ width, height, src, title, text }: Props) => {
       >
         <Typography
           variant="h5"
-          component="h4"
+          component="h3"
           color="primary.c100"
           sx={{ textShadow: '0px 4px 4px rgba(0, 0, 0, 0.75)', mb: '8px' }}
         >

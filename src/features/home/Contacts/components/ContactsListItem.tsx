@@ -43,7 +43,7 @@ export const ContactsListItem = ({ icon, title, text }: Props) => {
         >
           {icon}
 
-          <Typography variant="p6" component="h4" sx={{ ml: '16px' }}>
+          <Typography variant="p6" component="h3" sx={{ ml: '16px' }}>
             {title}
           </Typography>
         </Box>

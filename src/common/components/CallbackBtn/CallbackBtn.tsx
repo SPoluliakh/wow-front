@@ -22,7 +22,7 @@ export const CallbackBtn = ({ variant, sx, icon }: Props) => {
 
   return (
     <>
-      <Button onClick={handleOpen} sx={{ ...sx }}>
+      <Button onClick={handleOpen} sx={{ ...sx }} aria-label={variant}>
         {icon ?? variant}
       </Button>
       <Popup
